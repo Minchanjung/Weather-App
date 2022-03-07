@@ -16,3 +16,16 @@
     margin-right: 3em;
     margin-left: 3em;
 }
+
+#formContainer {
+    height: 100%;
+}
+
+form {
+    margin-top: 1.8em;
+    margin-bottom: 0.3em;
+}
+
+#errorMessage {
+    display: none;
+}
