@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    top: 0;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+    align-items: center;
+}
+
+#logo, #formContainer {
+    margin-right: 3em;
+    margin-left: 3em;
+}
