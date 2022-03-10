@@ -13,16 +13,37 @@
         <div id="formContainer">
             <form>
                 <label for="location"></label>
-                <input type="text" id="location">
+                <input type="text" id="locationInput" placeholder="Search Location..." autocomplete="off">
 
-                <input type="submit" id="submitBtn">
+                <input type="submit" id="submitBtn" value="?">
             </form>
             <div id="errorMessage">Please enter a valid City</div>
         </div>
         
     </div>
     <div id="weatherDisplay">
-
+        <div id="content">
+            <div id="infoContainer">
+                <h3 id="location"></h3>
+                <div id="weather"></div>
+                <h2 id="temperature"></h2>
+            </div>
+    
+            <div id="moreInfoContainer">
+                <div class="moreInfo" id="feelsLikeContainer">
+                    <div>Feels Like</div>
+                    <div id="feelsLike"></div>
+                </div>
+                <div class="moreInfo" id="humidityContainer">
+                    <div>Humidity</div>
+                    <div id="humidity"></div>
+                </div>
+                <div class="moreInfo" id="windContainer">
+                    <div>Wind Speed</div>
+                    <div id="wind"></div>
+                </div>
+            </div>
+        </div> 
     </div>
     
 </body>

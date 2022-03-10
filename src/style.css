@@ -1,6 +1,26 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
+}
+
+*:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+html, body {
+    font-family: montserrat, sans-serif;
+    height: 100%;
+}
+
+body {
+    background-image: url(/icons/background.jpeg);
+    background-size: 120%;
+    background-repeat: no-repeat;
 }
 
 #header {
@@ -8,7 +28,6 @@
     height: 5em;
     display: flex;
     justify-content: space-between;
-    background-color: gainsboro;
     align-items: center;
 }
 
@@ -26,6 +45,81 @@ form {
     margin-bottom: 0.3em;
 }
 
+input {
+    color: black;
+}
+
+#locationInput {
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    font-size: medium;
+}
+
+#submitBtn {
+    font-size: medium;
+    background: transparent;
+    border: 1px solid transparent;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+}
+
+#submitBtn:hover {
+    border: 1px solid white;
+}
+
 #errorMessage {
     display: none;
+}
+
+#weatherDisplay {
+    padding-right: 10em;
+    padding-left: 10em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    /*background-image: url(/icons/background.jpeg);
+    background-size: 110%;
+    background-repeat: no-repeat;*/
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#infoContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2em;
+    border-radius: 1em;
+    margin-right: 4em;
+}
+
+#weather {
+    margin-top: 2em;
+    margin-bottom:2em;
+}
+
+#moreInfoContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2em;
+    border-radius: 1em;
+    margin-left: 4em;
+}
+
+#feelsLikeContainer {
+    margin-bottom: 1.5em;
+}
+
+#windContainer {
+    margin-top: 1.5em;
 }
